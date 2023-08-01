@@ -1,0 +1,22 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Link from "../components/Link.astro";
+import { Image } from "@astrojs/image/components";
+---
+
+<MainLayout title="About" description="About Page">
+  <section class="container about" aria-label="about Me">
+    <Image src="/images/profile.jpg" alt="img" height={400} width={300} />
+    <div class="content">
+      <h1 class="h1">My Blog</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        animi, laudantium pariatur sint nemo consectetur magni praesentium
+        ratione est optio omnis, accusamus quod quidem! Corrupti voluptas
+        obcaecati culpa, non facere totam, nam quae cumque hic explicabo
+        reprehenderit voluptate laudantium praesentium!
+      </p>
+      <Link href="mailto:gmail@ff.com" style="primary" text="Contact me" />
+    </div>
+  </section>
+</MainLayout>
