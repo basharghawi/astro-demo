@@ -215,6 +215,9 @@ h1 span {
 .content h3 {
   font-size: var(--fs-lg);
   max-width: var(--content-md);
+  @media (max-width: 767px) {
+    font-size: var(--fs-md);
+  }
 }
 
 .h4,
@@ -224,6 +227,12 @@ h1 span {
 
 p {
   max-width: var(--content-lg);
+}
+
+@media (max-width: 767px) {
+  .post-container p {
+    font-size: 14px;
+  } 
 }
 
 small {
@@ -437,8 +446,8 @@ button {
   gap: var(--space-md);
   align-items: start;
 
-  @media --md {
-    grid-template-columns: 1fr 1fr;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
   }
 
   @media --lg {
